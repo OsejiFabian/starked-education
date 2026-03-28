@@ -38,6 +38,7 @@ const predictionRoutes = require('./routes/prediction');
 const analyticsRoutes = require('./routes/analytics');
 const tenantRoutes = require('./routes/tenants');
 const tenantAnalyticsRoutes = require('./routes/tenantAnalytics');
+const performanceRoutes = require('./routes/performance');
 
 
 // Initialize Express app
@@ -83,6 +84,7 @@ app.use('/api/prediction', predictionRoutes);
 app.use('/api/analytics', analyticsRoutes);
 app.use('/api/tenants', tenantRoutes);
 app.use('/api/analytics/tenants', tenantAnalyticsRoutes);
+app.use('/api/performance', performanceRoutes);
 
 
 // Root endpoint
